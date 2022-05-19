@@ -1,8 +1,15 @@
+import {StylesProvider} from '@material-ui/styles'
+import {CssBaseline} from '@material-ui/core'
+import GlobalStyle from 'commons/styles/global-style';
+import Main from 'containers/Main/index.jsx'
+
 function App() {
   return (
-    <div className="App">
-      <h1>Olá</h1>
-    </div>
+    <StylesProvider injectFirst>
+      <CssBaseline/>
+      <GlobalStyle/>
+      <Main/>
+    </StylesProvider>
   );
 }
 
