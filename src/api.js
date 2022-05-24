@@ -6,7 +6,7 @@ const headers = {
     cache: 'default'
 }
 
-function getCoutry(coutry){
+function getCoutry(country){
     return fetch(`${path}/${country}`, headers)
     .then((response) =>response.json())
 }
