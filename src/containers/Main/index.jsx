@@ -1,5 +1,6 @@
 import React, {memo, useState, useCallback, useEffect} from 'react';
 import Api from '../../api'
+import { ContainerStyled } from './style'
 
 function Main() {
     const[data, setData] = useState({})
@@ -16,7 +17,11 @@ function Main() {
 
     return(
         <div>
-            teste
+            <ContainerStyled>
+                <div className='mb-2'>
+
+                </div>
+            </ContainerStyled>
         </div>
     )
 }
