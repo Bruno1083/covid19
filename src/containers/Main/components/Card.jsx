@@ -8,7 +8,7 @@ import {
 } from './style'
 
 function Card ({ value, label, color}){
-    futurn (
+    return (
         <CardUI>
             <CardContentStyled color={color}>
                 <ValueStyled>{value}</ValueStyled>
